@@ -1,0 +1,109 @@
+﻿@charset "utf-8";
+/* CSS Document */
+
+
+@import url(http://weloveiconfonts.com/api/?family=fontawesome);
+
+
+@import url(http://meyerweb.com/eric/tools/css/reset/reset.css);
+
+
+
+[class*="fontawesome-"]:before {
+  font-family: 'FontAwesome', sans-serif;
+}
+
+
+body {
+  background: url("../back.jpg");
+  color: #606468;
+  font: 87.5%/1.5em 'Open Sans', sans-serif;
+  margin: 0;
+}
+
+a {
+  color: #eee;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+input {
+  border: none;
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.5em;
+  padding: 0;
+  -webkit-appearance: none;
+}
+
+p {
+  line-height: 1.5em;
+}
+
+.clearfix { *zoom: 1; } /* For IE 6/7 */
+.clearfix:before, .clearfix:after {
+  display: table;
+  content: "";
+}
+.clearfix:after { clear: both; }
+
+
+
+#submitForm {
+  margin: 50px auto;
+  width: 280px;
+}
+
+#submitForm form span {
+  background-color: #ffffff;
+  border-radius: 3px 0px 0px 3px;
+  color: #606468;
+  display: block;
+  float: left;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  width: 50px;
+}
+
+#submitForm form input {
+  height: 50px;
+}
+
+#submitForm form input[type="text"] {
+  background-color: #3b4148;
+  border-radius: 3px 3px 3px 3px;
+  color: #606468;
+  margin-bottom: 1em;
+  padding: 0 16px;
+  width: 280px;
+}
+
+#submitForm form input[type="submit"] {
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  background-color: #ea4c88;
+  color: #eee;
+  font-weight: bold;
+  margin-bottom: 2em;
+  text-transform: uppercase;
+  width: 280px;
+}
+
+#submitForm form input[type="submit"]:hover {
+  background-color: #d44179;
+}
+
+#submitForm > p {
+  text-align: center;
+}Yuma, AZ, United States
+
+#submitForm > p span {
+  padding-left: 5px;
+}
+
+}

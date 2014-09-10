@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <title>GopherCon App</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/style.css" media="screen" type="text/css" />
+    <script src="js/jquery-2.1.1.min.js" type="text/javascript"></script>
+
+    <script src="http://maps.googleapis.com/maps/api/js?sensor=false&amp;libraries=places" type="text/javascript"></script> 
+   
+    <link href="favicon.ico" rel="icon" type="image/x-icon" />
+</head>
+
+<body>
+
+  <html lang="en-US">
+<head>
+
+  <meta charset="utf-8">
+
+  <title>Enter Cities</title>
+
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400,700">
+
+</head>
+
+<body>
+
+    <div id="submitForm">
+
+
+        <form id="sendForm">
+
+            <fieldset class="clearfix">
+                <input type="submit" value="Weather" style="font-size:30px; font-weight:normal" disabled>
+                <input type="text" placeholder="Enter City" id="city1">
+                <input type="text" placeholder="Enter City" id="city2">
+                <input type="text" placeholder="Enter City" id="city3">
+                <input type="text" placeholder="Enter City" id="city4">
+                <input type="text" placeholder="Enter City" id="city5">                
+                <h3 id="errorLabel" style="color:#A52A2A; display:none; font-size:20px; padding-bottom:10px">Error</h3>
+                <input id="submit" type="submit" value="Submit">
+
+            </fieldset>
+
+        </form>
+        
+    </div>
+
+    
+    <div id="result" style="display:none">
+      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 downpad"  >
+        <div class="panel panel-default ">
+          <div class="panel-heading">
+           <h3 class="panel-title" id="City">City</h3>
+          </div>
+
+          <div class="panel-body">
+            <table class="table">
+              <tbody>
+                <tr>
+                  <td>Date:</td>
+                  <td id="Date">01/24/1988</td>
+                </tr>
+
+                <tr>
+                  <td>Minimum Temprature:</td>
+                  <td id="TempMin">12 &deg;C</td>
+                </tr>
+
+                <tr>
+                  <td>Maximum Temprature:</td>
+                  <td id="TempMax">69 &deg;C</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+      </div>
+    </div>
+  </div>  
+ 
+  <div class="container" style="margin-top: 20px;">
+    <div class="row" id="results">
+      <div>
+      </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="js/app.js"></script>
+
+</body>
+</html>
+
+</body>
+
+</html>
