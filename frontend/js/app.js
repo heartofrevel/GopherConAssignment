@@ -51,6 +51,11 @@ $(document).ready(function(){
           cache: false,
           success: function(result){
             var jsonObj = jQuery.parseJSON(result);            
+            if(jsonObj.hasOwnProperty('Error')){
+                label.innerHTML = "Bad Request";
+                label.style.display = "block";   
+            }
+            else{
             var city = jsonObj.Query
             var date = jsonObj.Date
             var tempMaxC = jsonObj.TempMaxC
@@ -63,6 +68,7 @@ $(document).ready(function(){
             $('#result #TempMin').html(tempMinC+"&deg;C / "+tempMinF+"&deg;F");
             $('#results').prepend($('#result').html());
             }
+          }
           });
         }            
       });

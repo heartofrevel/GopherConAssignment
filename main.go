@@ -117,13 +117,17 @@ func parseJSON(byteResponse []byte) WeatherData {
 	var parsedData WeatherData
 	err := json.Unmarshal(byteResponse, &parsedData)
 	if err != nil {
-		log.Print("This error should be fixed")
-
+		log.Print(err)
 	}
 	return parsedData
 }
 
 func makeByteResponse(parsedData WeatherData) []byte {
+
+	if len(parsedData.Data.Request) < 1 {
+		return errorMessage()
+	}
+
 	responseData := ResponseData{
 		Query:    parsedData.Data.Request[0].Query,
 		Date:     parsedData.Data.Weather[0].Date,
